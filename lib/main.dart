@@ -1,14 +1,18 @@
-import 'package:first_project/Currency_Converter.dart';
+// ignore: file_names
+import 'package:first_project/currency_converter_material_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const mob());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// ignore: camel_case_types
+class mob extends StatelessWidget {
+  const mob({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: currencyConverter());
+    return const MaterialApp(
+      home: CurrencyConverterPage(),
+    );
   }
 }
